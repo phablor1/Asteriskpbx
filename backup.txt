@@ -1,0 +1,92 @@
+<?php
+include 'validacoes.php'
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ConnectX - Usuario</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/adminx.css" media="screen" />
+</head>
+<body>
+    <div class="adminx-container">
+        <!-- Header -->
+        <?php include 'top.php'?>
+        <!-- // Header -->
+
+        <!-- expand-hover push -->
+        <?php include 'menu.php'?>
+
+        <!-- Main Content -->
+        <div class="adminx-content">
+            <div class="adminx-main-content">
+                <div class="container-fluid">
+                    <!-- BreadCrumb -->
+                    <nav aria-label="breadcrumb" role="navigation">
+                        <ol class="breadcrumb adminx-page-breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Cadastrar Usuario</a></li>
+                        </ol>
+                    </nav>
+
+                    <div class="pb-3">
+                        <h1>Cadastrar Usuario</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card mb-grid">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <div class="card-header-title">Cadastrar usuario</div>
+                                </div>
+                                <div class="card-body collapse show" id="">
+                                    <form action="salvarUsuario.php" method="POST">
+                                        <div class="form-group">
+                                            <label class="form-label">Nome</label>
+                                            <input type="text" name="nome" class="form-control" id="" placeholder="Nome">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label">Usuario</label>
+                                            <input type="text" name="usuario" class="form-control" id="" placeholder="Usuario">
+
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" name="email" class="form-control" id="" aria-describedby="emailHelp" placeholder="Email">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="exampleInputPassword1">Senha</label>
+                                            <input type="password" name="senha" class="form-control" id="" placeholder="Senha">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Main Content -->
+    </div>
+
+    <!-- If you prefer jQuery these are the required scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- If you prefer vanilla JS these are the only required scripts -->
+    <!-- script src="../dist/js/vendor.js"></script>
+    <script src="../dist/js/adminx.vanilla.js"></script-->
+    
+</body>
+</html>
